@@ -28,10 +28,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 30px 100px;
+    padding: 30px 1px;
     position: absolute;
-    top: 0;
-    width: 100%;
+    top: 7%;
+    width: 90%;
 }
 
 .navbar .logo img {
@@ -43,7 +43,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 60px;
+    gap: 100px;
     margin: 0;
 }
 
@@ -63,7 +63,7 @@ body {
 .home-content {
     position: absolute;
     top: 50%;
-    left: 12%;
+    left: 5%;
     transform: translateY(-50%);
     color: #fff;
 }
@@ -71,20 +71,20 @@ body {
 .home-content .welcome {
     font-family: 'MonumentRegular';
     color: #f3bbde;
-    font-size: 40px;
+    font-size: 60px;
     margin: 0;
 }
 
 .home-content .portfolio {
     font-family: 'MonumentUltra';
     color: #fdfbfc;
-    font-size: 90px;
+    font-size: 130px;
     margin: 10px 0;
 }
 
 .home-content .explore {
     font-family: 'MontserratItalic';
     color: #fff7ad;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 10px;
 }
