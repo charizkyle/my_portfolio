@@ -1,0 +1,20 @@
+<header>
+  <nav class="navbar">
+    <a href="/" class="logo">
+      <img src="{{ url_for('static', filename='images/cks-pink.png') }}" alt="Logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="/" class="{% if request.path == '/' %}active{% endif %}">Home</a></li>
+      <li><a href="/profile" class="{% if request.path == '/profile' %}active{% endif %}">Profile</a></li>
+      <li class="dropdown">
+        <a href="/works" class="{% if request.path.startswith('/works') %}active{% endif %}">Works</a>
+        <ul class="dropdown-content">
+          <li><a href="/touppercase">To Uppercase</a></li>
+          <li><a href="/area_circle">Area of Circle</a></li>
+          <li><a href="/area_triangle">Area of Triangle</a></li>
+        </ul>
+      </li>
+      <li><a href="/contact" class="{% if request.path == '/contact' %}active{% endif %}">Contact</a></li>
+    </ul>
+  </nav>
+</header>
