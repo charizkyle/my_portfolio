@@ -91,13 +91,10 @@ body {
 
 /* ====== PROFILE PAGE ====== */
 .profile-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
+    position: relative;
+    width: 100%;
     height: 100vh;
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 /* “About Me” Title */
@@ -105,33 +102,35 @@ body {
     font-family: 'MonumentRegular';
     color: #f3bbde;
     font-size: 45px;
-    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 4%;
+    margin-left: 480px;
+    margin-bottom: 5px;
 }
 
-/* Layout container for photo + info box */
-.profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
+/* Profile Photo - independent */
+.profile-photo {
+    position: absolute;
+    top: 60px;
+    left: 0.1%;
+    right: 1%;
 }
 
-/* Profile Photo */
 .profile-photo img {
-    width: 360px;
-    height: 360px;
+    width: 800px;
+    height: 800px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #f3bbde;
 }
 
-/* Info Box */
+/* Info Box - independent */
 .profile-box {
+    position: absolute;
+    top: 300px;
+    right: 15%;
     background-color: #3f2c5f;
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 40px 60px;
     width: 600px;
-    position: relative;
     text-align: center;
 }
 
@@ -151,8 +150,8 @@ body {
 .profile-name {
     font-family: 'MonumentUltra';
     color: #fff7ad;
-    font-size: 28px;
-    margin-top: 40px;
+    font-size: 35px;
+    margin-top: 60px;
     margin-bottom: 10px;
 }
 
@@ -160,13 +159,13 @@ body {
 .profile-degree {
     font-family: 'MontserratItalic';
     color: #fdfbfc;
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 0.5;
 }
 
 /* “I’m a 2nd-year…” image */
 .about-me-image img {
-    margin-top: 30px;
+    margin-top: 35px;
     width: 100%;
     border-radius: 10px;
 }

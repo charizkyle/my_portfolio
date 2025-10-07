@@ -11,22 +11,18 @@
   <section class="profile-section">
     <h1 class="about-title">About Me</h1>
 
-    <div class="profile-container">
-      <div class="profile-photo">
-        <img src="{{ url_for('static', filename='images/profile-photo.png') }}" alt="Profile Photo">
-      </div>
+    <div class="profile-photo">
+      <img src="{{ url_for('static', filename='images/profile-photo.png') }}" alt="Profile Photo">
+    </div>
 
-      <div class="profile-box">
-        <div class="profile-line"></div>
-        <h2 class="profile-name">CHARIZ KYLE A. SANTOS</h2>
-        <p class="profile-degree">
-          Bachelor of Science in Computer Engineering<br>
-          Polytechnic University of the Philippines
-        </p>
-
-        <div class="about-me-image">
-          <img src="{{ url_for('static', filename='images/about-me.png') }}" alt="About Me Text">
-        </div>
+    <div class="profile-box">
+      <div class="profile-line"></div>
+      <h2 class="profile-name">CHARIZ KYLE A. SANTOS</h2>
+      <p class="profile-degree">Bachelor of Science in Computer Engineering</p>
+      <p class="profile-degree">Polytechnic University of the Philippines</p>
+      
+      <div class="about-me-image">
+        <img src="{{ url_for('static', filename='images/about-me.png') }}" alt="About Me Paragraph">
       </div>
     </div>
   </section>
