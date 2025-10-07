@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Text Uppercase Converter</title>
+  <title>Convert Text to Uppercase</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
   {% include 'components/header.html' %}
-  <div class="content">
-    <h1>Convert Text to Uppercase</h1>
-    <form method="POST">
-      <input type="text" name="text" placeholder="Enter text here">
-      <button type="submit">Convert</button>
-    </form>
-    {% if result %}
-    <p>Converted Text: <b>{{ result }}</b></p>
-    {% endif %}
-  </div>
+
+  <section class="workpage-section">
+    <h1 class="workpage-title">Convert Text to Uppercase</h1>
+    <div class="work-box">
+      <form method="POST">
+        <input type="text" name="text" placeholder="Enter text here" required>
+        <button type="submit">Convert</button>
+      </form>
+
+      {% if result %}
+      <p class="result">Converted Text: <b>{{ result }}</b></p>
+      {% endif %}
+    </div>
+  </section>
 </body>
 </html>
