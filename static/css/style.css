@@ -172,3 +172,71 @@ body {
     width: 100%;
     border-radius: 10px;
 }
+
+/* ====== WORKS PAGE ====== */
+.works-section {
+    text-align: center;
+    padding-top: 150px;
+    color: #fff;
+}
+
+.works-title {
+    font-family: 'MonumentRegular';
+    color: #f3bbde;
+    font-size: 50px;
+    margin-bottom: 60px;
+    padding-top: 4%;
+    text-align: center;
+}
+
+.works-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.work-card {
+    background-color: rgba(63, 44, 95, 0.9);
+    border-radius: 20px;
+    width: 320px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255, 247, 173, 0.5);
+}
+
+.work-card h2 {
+    font-family: 'MonumentUltra';
+    color: #fff7ad;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.work-card p {
+    font-family: 'MontserratItalic';
+    color: #fdfbfc;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.work-btn {
+    display: inline-block;
+    background-color: #fff7ad;
+    color: #3f2c5f;
+    font-family: 'MonumentRegular';
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.work-btn:hover {
+    background-color: #f3bbde;
+    color: #fff;
+}
