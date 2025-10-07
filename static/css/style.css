@@ -319,3 +319,94 @@ body {
     margin-top: 20px;
     font-size: 18px;
 }
+
+/* ===== CONTACT PAGE ===== */
+.contact-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    text-align: center;
+}
+
+.contact-title {
+    font-family: 'MonumentRegular';
+    color: #f3bbde;
+    font-size: 45px;
+    margin-bottom: 60px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-box {
+    background-color: #3f2c5f;
+    border-radius: 25px;
+    padding: 35px 45px;
+    width: 300px;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-box::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #fff7ad;
+    border-radius: 5px;
+}
+
+.contact-box:hover {
+    transform: scale(1.05);
+}
+
+.contact-box h2 {
+    font-family: 'MonumentUltra';
+    color: #fff7ad;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-family: 'MontserratItalic';
+    color: #fdfbfc;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* ===== ICONS IN CONTACT BOXES ===== */
+.icon {
+    font-size: 40px;
+    color: #fff7ad;
+    margin-bottom: 15px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.work-box:hover .icon {
+    transform: scale(1.1);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .contact-box {
+        width: 85%;
+    }
+}
