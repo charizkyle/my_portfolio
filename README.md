@@ -1,10 +1,9 @@
 
 ---
 
-# 🌐 DSA Website
+# 🌐 Welcome to My Website Portfolio
 
-Welcome to my **Website Portfolio** — a modern and elegant web project built to showcase creativity, structure, and clean design.  
-This project combines simplicity and bold visual style using custom fonts and a responsive layout.
+Welcome to my **Website Portfolio** — an interactive showcase of my programming works!
 
 ---
 
