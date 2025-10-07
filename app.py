@@ -10,17 +10,38 @@ def index():
 def profile():
     return render_template('profile.html')
 
-@app.route('/works', methods=['GET', 'POST'])
+@app.route('/works')
 def works():
+    return render_template('works.html')
+
+@app.route('/touppercase', methods=['GET', 'POST'])
+def toupperc():
     result = None
     if request.method == 'POST':
-        input_string = request.form.get('inputString', '')
-        result = input_string.upper()
+        text = request.form['text']
+        result = text.upper()
     return render_template('touppercase.html', result=result)
+
+@app.route('/area_circle', methods=['GET', 'POST'])
+def area_circle():
+    area = None
+    if request.method == 'POST':
+        radius = float(request.form['radius'])
+        area = 3.1416 * (radius ** 2)
+    return render_template('area_circle.html', area=area)
+
+@app.route('/area_triangle', methods=['GET', 'POST'])
+def area_triangle():
+    area = None
+    if request.method == 'POST':
+        base = float(request.form['base'])
+        height = float(request.form['height'])
+        area = 0.5 * base * height
+    return render_template('area_triangle.html', area=area)
 
 @app.route('/contact')
 def contact():
-    return "Contact Page. please create me an html page with dummy contact info"
+    return render_template('contact.html')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)

@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Text Uppercase Converter</title>
+  <title>Area of Circle</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
   {% include 'components/header.html' %}
   <div class="content">
-    <h1>Convert Text to Uppercase</h1>
+    <h1>Area of a Circle</h1>
     <form method="POST">
-      <input type="text" name="text" placeholder="Enter text here">
-      <button type="submit">Convert</button>
+      <input type="number" step="any" name="radius" placeholder="Enter radius">
+      <button type="submit">Calculate</button>
     </form>
-    {% if result %}
-    <p>Converted Text: <b>{{ result }}</b></p>
+    {% if area %}
+    <p>Area: <b>{{ area }}</b></p>
     {% endif %}
   </div>
 </body>
