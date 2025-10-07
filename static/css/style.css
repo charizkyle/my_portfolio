@@ -240,3 +240,81 @@ body {
     background-color: #f3bbde;
     color: #fff;
 }
+
+/* ====== INDIVIDUAL WORK PAGES ====== */
+.workpage-section {
+    text-align: center;
+    padding-top: 150px;
+    color: #fff;
+}
+
+.workpage-title {
+    font-family: 'MonumentRegular';
+    color: #f3bbde;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.work-box {
+    background-color: rgba(63, 44, 95, 0.9);
+    border-radius: 20px;
+    width: 480px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.work-box::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #fff7ad;
+    border-radius: 2px;
+}
+
+.work-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.work-box input {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    font-family: 'MontserratItalic';
+}
+
+.work-box button {
+    background-color: #fff7ad;
+    color: #3f2c5f;
+    border: none;
+    font-family: 'MonumentRegular';
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.work-box button:hover {
+    background-color: #f3bbde;
+    color: #fff;
+}
+
+.result {
+    font-family: 'MontserratItalic';
+    color: #fdfbfc;
+    margin-top: 20px;
+    font-size: 18px;
+}
