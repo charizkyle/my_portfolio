@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-  {% include 'components/header.html' %}
-  <div class="content">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Explore my projects, profile, and contact information below.</p>
-  </div>
+    {% include 'components/header.html' %}
+    <section class="home-content">
+        <h2 class="welcome">Welcome to my</h2>
+        <h1 class="portfolio">PORTFOLIO</h1>
+        <p class="explore">Explore my Profile and Programming Works!</p>
+    </section>
 </body>
 </html>

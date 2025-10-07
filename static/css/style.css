@@ -1,94 +1,90 @@
+/* ====== FONT IMPORTS ====== */
+@font-face {
+    font-family: 'MonumentRegular';
+    src: url('../fonts/MonumentExtended-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MonumentUltra';
+    src: url('../fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MontserratItalic';
+    src: url('../fonts/Montserrat-Italic.woff2') format('woff2');
+}
+
+/* ====== GENERAL STYLING ====== */
 body {
-  background-image: url("../images/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+    margin: 0;
+    height: 100vh;
+    background: url("../images/background.png") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
 }
 
-/* Header styling */
-header {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 15px 0;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: 1px;
+/* ====== NAVBAR ====== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px 100px;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
-/* Content container */
-.content {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 30px 40px;
-  margin-top: 60px;
-  text-align: center;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  width: 80%;
-  max-width: 500px;
+.navbar .logo img {
+    height: 50px;
+    margin-right: auto;
+    margin-left: 60px;
 }
 
-/* Form elements */
-input[type="number"],
-input[type="text"] {
-  width: 80%;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  text-align: center;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin: 0;
 }
 
-/* Buttons */
-button {
-  background-color: #ff99cc;
-  color: white;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s ease;
+.nav-links a {
+    text-decoration: none;
+    font-family: 'MonumentRegular';
+    color: #f3bbde;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-button:hover {
-  background-color: #ff66b2;
+.nav-links a:hover {
+    color: #fff7ad;
 }
 
-/* Result text */
-p {
-  font-size: 18px;
-  margin-top: 20px;
+/* ====== HOME CONTENT ====== */
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
+    color: #fff;
 }
 
-/* Links inside header or nav */
-a {
-  color: #ffd6e7;
-  text-decoration: none;
+.home-content .welcome {
+    font-family: 'MonumentRegular';
+    color: #f3bbde;
+    font-size: 40px;
+    margin: 0;
 }
 
-a:hover {
-  text-decoration: underline;
+.home-content .portfolio {
+    font-family: 'MonumentUltra';
+    color: #fdfbfc;
+    font-size: 90px;
+    margin: 10px 0;
 }
 
-/* Responsive tweaks */
-@media (max-width: 600px) {
-  .content {
-    width: 90%;
-    padding: 20px;
-  }
-
-  header {
-    font-size: 20px;
-  }
+.home-content .explore {
+    font-family: 'MontserratItalic';
+    color: #fff7ad;
+    font-size: 18px;
+    margin-top: 10px;
 }

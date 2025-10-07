@@ -1,8 +1,12 @@
 <header>
-  <nav>
-    <a href="{{ url_for('index') }}">Home</a> |
-    <a href="{{ url_for('profile') }}">Profile</a> |
-    <a href="{{ url_for('works') }}">Works</a> |
-    <a href="{{ url_for('contact') }}">Contact</a>
-  </nav>
+    <nav class="navbar">
+        <a href="/" class="logo">
+            <img src="{{ url_for('static', filename='images/cks-pink.png') }}" alt="CKS Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/works">Works</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
