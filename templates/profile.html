@@ -2,14 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Profile</title>
+  <title>Profile - My Portfolio</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
   {% include 'components/header.html' %}
-  <div class="content">
-    <h1>About Me</h1>
-    <p>Hi! I'm Chariz, a Computer Engineering student passionate about learning, building, and creating.</p>
-  </div>
+
+  <section class="profile-section">
+    <h1 class="about-title">About Me</h1>
+
+    <div class="profile-container">
+      <div class="profile-photo">
+        <img src="{{ url_for('static', filename='images/profile-photo.png') }}" alt="Profile Photo">
+      </div>
+
+      <div class="profile-box">
+        <div class="profile-line"></div>
+        <h2 class="profile-name">CHARIZ KYLE A. SANTOS</h2>
+        <p class="profile-degree">
+          Bachelor of Science in Computer Engineering<br>
+          Polytechnic University of the Philippines
+        </p>
+
+        <div class="about-me-image">
+          <img src="{{ url_for('static', filename='images/about-me.png') }}" alt="About Me Text">
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

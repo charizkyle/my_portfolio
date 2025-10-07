@@ -88,3 +88,85 @@ body {
     font-size: 20px;
     margin-top: 10px;
 }
+
+/* ====== PROFILE PAGE ====== */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    height: 100vh;
+    padding-top: 150px;
+}
+
+/* “About Me” Title */
+.about-title {
+    font-family: 'MonumentRegular';
+    color: #f3bbde;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+/* Layout container for photo + info box */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* Profile Photo */
+.profile-photo img {
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #f3bbde;
+}
+
+/* Info Box */
+.profile-box {
+    background-color: #3f2c5f;
+    border-radius: 20px;
+    padding: 40px 60px;
+    width: 600px;
+    position: relative;
+    text-align: center;
+}
+
+/* Little line at top-center */
+.profile-line {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 8px;
+    background-color: #fff7ad;
+    border-radius: 10px;
+}
+
+/* Name */
+.profile-name {
+    font-family: 'MonumentUltra';
+    color: #fff7ad;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* Degree & University */
+.profile-degree {
+    font-family: 'MontserratItalic';
+    color: #fdfbfc;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* “I’m a 2nd-year…” image */
+.about-me-image img {
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 10px;
+}
