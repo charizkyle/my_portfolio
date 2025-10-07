@@ -22,12 +22,19 @@ def toupperc():
         result = text.upper()
     return render_template('touppercase.html', result=result)
 
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
 @app.route('/area_circle', methods=['GET', 'POST'])
 def area_circle():
     area = None
     if request.method == 'POST':
-        radius = float(request.form['radius'])
-        area = 3.1416 * (radius ** 2)
+        try:
+            radius = float(request.form['radius'])
+            area = 3.14159 * (radius ** 2)
+        except ValueError:
+            area = "Invalid input"
     return render_template('area_circle.html', area=area)
 
 @app.route('/area_triangle', methods=['GET', 'POST'])
