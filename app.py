@@ -22,10 +22,6 @@ def toupperc():
         result = text.upper()
     return render_template('touppercase.html', result=result)
 
-from flask import Flask, render_template, request
-
-app = Flask(__name__)
-
 @app.route('/area_circle', methods=['GET', 'POST'])
 def area_circle():
     area = None
