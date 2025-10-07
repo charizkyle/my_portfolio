@@ -1,7 +1,6 @@
 
 ---
 
-```markdown
 # 🌐 DSA Website
 
 Welcome to my **Website Portfolio** — a modern and elegant web project built to showcase creativity, structure, and clean design.  
@@ -67,7 +66,8 @@ MY_PORTFOLIO/
     ├── area_circle.html
     └── area_triangle.html
 
-````
+
+```
 
 ---
 
@@ -108,7 +108,7 @@ MY_PORTFOLIO/
 1. **Clone this repository:**
    ```bash
    git clone https://github.com/charizkyle/my_portfolio.git
-````
+    ```
 
 2. **Open in VS Code**
 3. **Run your project**
@@ -149,5 +149,3 @@ Background image:
 ---
 
 ```
-
----
