@@ -5,7 +5,7 @@
 
 Welcome to my **Website Portfolio** — an interactive showcase of my programming works!
 
-Hi! I'm **Chariz Kyle A. Santos**, a 2nd-year Computer Engineering student with a designer’s eye — passionate about blending creativity with logic. I’m determined to learn how design and programming can work together to craft meaningful projects that not only innovate, but also inspire and create real impact in society.
+Hello! I’m **Chariz Kyle A. Santos**, a second-year Computer Engineering student with a keen eye for design and a passion for blending creativity with logic. I aim to explore how design and programming can work hand in hand to develop meaningful projects that innovate, inspire, and create a positive impact on society.
 
 ---
 
@@ -17,7 +17,7 @@ Hi! I'm **Chariz Kyle A. Santos**, a 2nd-year Computer Engineering student with 
 
 ---
 
-## 🖼️ Preview
+## 🟪 Preview
   
 ![Home Page Preview](static/images/home-page-preview.png)
 ![Profile Page Preview](static/images/profile-page-preview.png)
