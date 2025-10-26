@@ -25,6 +25,8 @@ Hello! I’m **Chariz Kyle A. Santos**, a second-year Computer Engineering stude
 ![To Uppercase Preview](static/images/touppercase-preview.png)
 ![Area of Circle Preview](static/images/area-circle-preview.png)
 ![Area of Triangle Preview](static/images/area-triangle-preview.png)
+![Infix Input Preview](static/images/infix-input-preview.png)
+![Infix to Postfix Preview](static/images/infix-postfix-preview.png)
 ![Contacts Page Preview](static/images/contact-page-preview.png)
 
 ---
