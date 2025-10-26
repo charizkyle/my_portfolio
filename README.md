@@ -117,15 +117,6 @@ MY_PORTFOLIO/
 
 ---
 
-## 💫 Design Highlights
-
-* 🎨 *Vibrant visuals* blended with subtle gradients
-* 💎 *Premium typography* for both clarity and character
-* 🧱 *Clean modular file organization*
-* 📱 *Responsive on all devices*
-
----
-
 ## ❤️ Credits
 
 Fonts used:
