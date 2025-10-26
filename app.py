@@ -46,5 +46,46 @@ def area_triangle():
 def contact():
     return render_template('contact.html')
 
+# ===== INFIX TO POSTFIX =====
+import re
+
+def infix_to_postfix(expression):
+    # Add spaces around every operator and parenthesis
+    expression = re.sub(r"([+\-*/^()])", r" \1 ", expression)
+    expression = expression.strip()
+
+    precedence = {'+': 1, '-': 1, '*': 2, '/': 2, '^': 3}
+    stack = []
+    output = []
+
+    for token in expression.split():
+        if token.isalnum():
+            output.append(token)
+        elif token == '(':
+            stack.append(token)
+        elif token == ')':
+            while stack and stack[-1] != '(':
+                output.append(stack.pop())
+            stack.pop()
+        else:
+            while (stack and stack[-1] != '(' and
+                   precedence.get(token, 0) <= precedence.get(stack[-1], 0)):
+                output.append(stack.pop())
+            stack.append(token)
+
+    while stack:
+        output.append(stack.pop())
+
+    return ' '.join(output)
+
+
+@app.route('/infix_postfix', methods=['GET', 'POST'])
+def infix_postfix():
+    postfix = None
+    if request.method == 'POST':
+        infix_expr = request.form['infix']
+        postfix = infix_to_postfix(infix_expr)
+    return render_template('infix_postfix.html', postfix=postfix)
+
 if __name__ == '__main__':
     app.run(debug=True)

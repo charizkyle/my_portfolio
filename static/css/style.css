@@ -333,7 +333,8 @@ body {
     font-family: 'MonumentRegular';
     color: #f3bbde;
     font-size: 45px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    padding-top: 4%;
 }
 
 .contact-container {
