@@ -90,6 +90,7 @@ MY_PORTFOLIO/
 
 - **HTML5**
 - **CSS3**
+- **Canva** for design layout
 - *(Optional)* **Python (Flask/Django)** for backend logic  
 - **VS Code** as the main development environment
 
