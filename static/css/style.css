@@ -340,8 +340,7 @@ body {
 .contact-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 40px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -401,7 +400,7 @@ body {
 }
 
 /* Responsive Layout */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .contact-container {
         flex-direction: column;
         gap: 25px;
